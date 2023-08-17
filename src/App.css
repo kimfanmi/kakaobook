@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+ul {
+  list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contentBox {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contentBox ul li {
+  margin-top: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contentBox ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navBar a {
+  padding: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.navBar a:hover {
+  color: aqua;
+}
+
+.navBar a.active {
+  color: blue;
+  border-bottom: 3px solid blue;
+}
+
+.listBox {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.listBox a img {
+  display: block;
+  width: 130px;
+  height: 180px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listBox .info {
+  display: block;
+  padding: 10px 0px 0px 35px;
+}
+
+.info > div {
+  margin-top: 10px;
+}
+
+.info div:nth-child(1) {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.info div:nth-child(2) span {
+  margin-right: 20px;
+}
+.info div:nth-child(3) {
+  font-size: 0.8rem;
 }
